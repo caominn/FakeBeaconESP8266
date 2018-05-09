@@ -61,7 +61,7 @@ void randomString(int len, char* ssid) {
   }
 }
 
-void sendBeacon(char* ssid) {
+void sendBeacon(constr char* ssid) {  //if esp8266 community 2.1.0,char* ssid
     // Randomize channel //
     byte channel = random(1,12); 
     wifi_set_channel(channel);
